@@ -4,6 +4,10 @@
 
 #ifndef NAI_PROJEKT1_TRAINER_H
 #define NAI_PROJEKT1_TRAINER_H
+
+/*
+ * dodaje wartości ze stringa do wektora doubli
+ * */
 auto prepare(vector<double> & wektorDoubli, string& str){
     for (auto i=0;i<str.size();i++){
         if (str[i]==','){
@@ -16,7 +20,9 @@ auto prepare(vector<double> & wektorDoubli, string& str){
 
 }
 
-
+/*
+ * wyciąga z pliku testowego wektory
+ * */
 auto splitFileTest(const string &path, vector<vector<double>> & vectorTestowy){
     auto trainingfile = ifstream(path);
     auto wektorDoubli = vector<double>();
@@ -28,7 +34,9 @@ auto splitFileTest(const string &path, vector<vector<double>> & vectorTestowy){
     }
 
 }
-
+/*
+ * wyciąga nazwy i wektory z pliku treningowego
+ * */
 auto splitFileTrain(const string &path, vector<pair <string, vector<double>>> & vectorTreningowy){
     auto trainingfile = ifstream(path);
     //int iter=0;

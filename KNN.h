@@ -90,7 +90,9 @@ auto kNNfindAnswer( const vector<pair <string, double>> &vectorWynikowy, const v
 }
 
 }
-
+/*
+ * wylicza kNN i wyświetla wynik
+ * */
 auto kNN(const vector<pair <string, vector<double>>> &vectorTreningowy,const vector<double> &vec, int k){
   auto vectorWynikowy = kNNcalc(vectorTreningowy, vec);
   kNNfindLowest(vectorWynikowy,k);
