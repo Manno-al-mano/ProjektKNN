@@ -24,6 +24,7 @@ class Perceptron{
             for(auto i = 0; i<sprawdzany.size();i++){
                 vec[i]=vec[i]+(expectedValue-poprawnosc)*alfa*sprawdzany[i];
             }
+            próg=próg+(expectedValue-poprawnosc)*alfa*-1
         }
     }
 
