@@ -22,13 +22,13 @@ using std::cin;
 
 #include "Preload.h"
 #include "Trainer.h"
-#include "KNN.h"
+
 #include "AppKernel.h"
 
 
 
 int main(int argc, char *argv[]) {
-    AppKernel(argc,argv);
+    cout<<true+ true;
     return 0;
 }
 

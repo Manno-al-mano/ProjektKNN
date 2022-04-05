@@ -1,3 +1,4 @@
+/*
 //
 // Created by mpiot on 15.03.2022.
 //
@@ -8,9 +9,11 @@
 #ifndef NAI_PROJEKT1_APPKERNEL_H
 #define NAI_PROJEKT1_APPKERNEL_H
 
+*/
 /*
  * liczy kNN dla grupy wektorów
- * */
+ * *//*
+
 auto testGroup(const vector<pair <string, vector<double>>> &vectorTreningowy,
                const vector<vector<double>> &vectorTestowy,
                int k
@@ -20,9 +23,11 @@ auto testGroup(const vector<pair <string, vector<double>>> &vectorTreningowy,
         kNN(vectorTreningowy,vec,k);
     }
 }
+*/
 /*
  * pozwala na podanie wymiarów wektora i policzenie jego kNN
- * */
+ * *//*
+
 auto addVector(int k, const vector<pair <string, vector<double>>> &vectorTreningowy){
     string str;
     auto write=true;
@@ -46,9 +51,11 @@ auto addVector(int k, const vector<pair <string, vector<double>>> &vectorTrening
 
     }
 }
+*/
 /*
  * wywołuje wszystkie funkcje
- * */
+ * *//*
+
 auto AppKernel(int argc, char *argv[]) {
     auto stringi = vector<string>();
     stringi=string_conv(argc,argv);
@@ -70,3 +77,4 @@ auto vectorTestowy = vector<vector<double>>();
 
 }
 #endif //NAI_PROJEKT1_APPKERNEL_H
+*/
